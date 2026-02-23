@@ -2,8 +2,8 @@
 	"credit": "Made with Blockbench",
 	"texture_size": [64, 64],
 	"textures": {
-		"0": "createdelight:block/machine/small_centrifugation",
-		"particle": "createdelight:block/machine/small_centrifugation"
+		"0": "rimcraft:block/machine/small_centrifugation",
+		"particle": "rimcraft:block/machine/small_centrifugation"
 	},
 	"elements": [
 		{

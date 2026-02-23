@@ -45,6 +45,7 @@ ServerEvents.recipes(e => {
   remove_recipes_id(e, [
     "farmersdelight:salmon_roll",
     "farmersdelight:cod_roll",
+    "culturaldelights:egg_roll"
   ])
   const{youkaishomecoming} = e.recipes
   youkaishomecoming.cuisine_mixed(

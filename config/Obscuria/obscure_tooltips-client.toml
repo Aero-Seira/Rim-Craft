@@ -37,7 +37,7 @@ ignoredItems = ["quality_equipment:reforge_gui_button"]
 
 [Model-Preview]
 	#Whether Obscure Tooltips should display 3D armor previews.
-	armorPreviewEnabled = true
+	armorPreviewEnabled = false
 	#Width of the 3D armor preview in pixels.
 	#Range: 16 ~ 128
 	armorPreviewWidth = 40
@@ -46,7 +46,7 @@ ignoredItems = ["quality_equipment:reforge_gui_button"]
 	#List of item IDs that should never display a 3D armor preview.
 	armorPreviewBlacklist = []
 	#Whether Obscure Tooltips should display 3D tool/weapon previews.
-	toolPreviewEnabled = true
+	toolPreviewEnabled = false
 	#Width of the 3D tool/weapon preview in pixels.
 	#Range: 16 ~ 128
 	toolPreviewWidth = 30

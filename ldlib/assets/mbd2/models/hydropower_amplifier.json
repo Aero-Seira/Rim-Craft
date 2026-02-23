@@ -2,7 +2,7 @@
     "parent": "minecraft:block/orientable",
     "textures": {
       "front": "mbd2:block/hydropower_amplifier",
-      "side": "createdelight:block/sky_steel_casing",
-      "top": "createdelight:block/sky_steel_casing"
+      "side": "rimcraft:block/sky_steel_casing",
+      "top": "rimcraft:block/sky_steel_casing"
     }
   }
