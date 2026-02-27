@@ -1,14 +1,35 @@
 {
   "favorites": [],
   "lookup_history": [
+    "item:mynethersdelight:fries_ghasta",
+    "item:rimcraft:wrapped_fries_ghasta",
+    "item:supplementaries:raked_gravel",
+    "item:createcafe:oreo_dough",
+    "item:createcafe:oreo_half_raw",
+    "item:createcafe:oreo_half",
+    "item:frycooks_delight:fried_potato",
+    "item:create_bic_bit:raw_cheese_souffle",
+    "item:collectorsreap:platinum_bass_slice",
+    "item:collectorsreap:fish_mix",
+    "item:alexsmobs:unsettling_kimono{Damage:0}",
+    "item:vintagedelight:deluxe_granola_bar",
+    "item:vintagedelight:fruity_granola_bar",
+    "item:createutilities:void_casing",
+    "item:immortalers_delight:kwat_wheat_paste",
     {
       "type": "item",
-      "id": "rimcraftcore:copper_coin",
-      "amount": 45
+      "id": "immortalers_delight:kwat_wheat_doufu",
+      "remainder": "item:minecraft:bowl"
     },
+    "item:immortalers_delight:cold_kwat_tofu_salad",
+    "item:createutilities:void_steel_ingot",
+    {
+      "type": "item",
+      "id": "collectorsreap:strawberry_gummy",
+      "amount": 9
+    },
+    "item:vintagedelight:salt_dust",
     "item:ad_astra:rocket_nose_cone",
-    "item:rimcraft:advanced_cabin",
-    "item:rimcraft:advanced_crystal_panel",
     "item:create_new_age:reinforced_motor",
     "item:tacz:modern_kinetic_gun{GunCurrentAmmoCount:178683143,GunFireMode:\"AUTO\",GunId:\"zeta:las13\",HasBulletInBarrel:1b,HeatAmount:258.0f,OverHeated:0b}",
     "item:youkaishomecoming:tuna_nigiri",
@@ -58,7 +79,6 @@
     },
     "item:northstar:salt",
     "#item:forge:dusts/salt",
-    "item:vintagedelight:salt_dust",
     "item:alexscaves:cloak_of_darkness{CanCharge:1b,CloakCharge:137,Damage:0,LastEquipMessageTime:22977L,LastLightTimestamp:24484L}",
     "item:alexscaves:occult_gem",
     "item:alexscaves:totem_of_possession{ControllingEntityID:-1,Damage:0}",
