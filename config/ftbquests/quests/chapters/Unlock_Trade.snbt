@@ -126,7 +126,10 @@
 			tasks: [{
 				count: 64L
 				id: "5EB0E9EE15FAB25A"
-				item: { Count: 64, id: "createaddition:electrum_ingot" }
+				item: {
+					Count: 64
+					id: "createaddition:electrum_ingot"
+				}
 				type: "item"
 			}]
 			x: 8.0d
@@ -347,7 +350,10 @@
 			tasks: [{
 				count: 64L
 				id: "4C0BB2845A4E927D"
-				item: { Count: 64, id: "createmetallurgy:obdurium_ingot" }
+				item: {
+					Count: 64
+					id: "createmetallurgy:obdurium_ingot"
+				}
 				type: "item"
 			}]
 			x: 4.0d
@@ -364,7 +370,10 @@
 			tasks: [{
 				count: 64L
 				id: "142FE90DA9EF717A"
-				item: { Count: 64, id: "createutilities:void_steel_ingot" }
+				item: {
+					Count: 64
+					id: "createutilities:void_steel_ingot"
+				}
 				type: "item"
 			}]
 			x: 6.0d

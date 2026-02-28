@@ -1,6 +1,39 @@
 {
   "favorites": [],
   "lookup_history": [
+    "item:bakeries:sliced_toast",
+    "item:bakeries:salmon_sandwich{}",
+    "item:bakeries:garlic_flavored_baguette{Damage:0}",
+    "item:bakeries:honey_butter_spread_toast",
+    "item:createdelight:butter",
+    {
+      "type": "fluid",
+      "id": "youkaishomecoming:cream",
+      "amount": 500
+    },
+    "item:bakeries:honey_butter",
+    {
+      "type": "item",
+      "id": "bakeries:butter_cube",
+      "amount": 2
+    },
+    [
+      "item:createdelight:butter",
+      "item:bakeries:butter_cube"
+    ],
+    "item:cosmopolitan:cream",
+    "item:bakeries:bottle_cream",
+    "item:minecraft:emerald",
+    "item:createdelight:iron_casing",
+    {
+      "type": "item",
+      "id": "createdelightcore:gold_coin",
+      "amount": 23
+    },
+    "item:bakeries:bread_knife{Damage:0}",
+    "item:createdelightcore:ruby_chocolate_mold_filled",
+    "item:createdelightcore:pumpkin_ice_cream_scoop",
+    "item:createdelightcore:mint_syrup",
     "item:immortalers_delight:evolutcorn_paste_bucket",
     "item:immortalers_delight:evolutcorn_paste",
     "item:createdelightcore:unfried_chicken_leg",
@@ -49,7 +82,6 @@
     "item:alexsmobs:unsettling_kimono{Damage:0}",
     "item:vintagedelight:deluxe_granola_bar",
     "item:vintagedelight:fruity_granola_bar",
-    "item:createutilities:void_casing",
     "item:immortalers_delight:kwat_wheat_paste",
     {
       "type": "item",
@@ -57,7 +89,6 @@
       "remainder": "item:minecraft:bowl"
     },
     "item:immortalers_delight:cold_kwat_tofu_salad",
-    "item:createutilities:void_steel_ingot",
     {
       "type": "item",
       "id": "collectorsreap:strawberry_gummy",

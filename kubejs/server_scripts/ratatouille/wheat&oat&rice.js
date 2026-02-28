@@ -55,7 +55,7 @@ ServerEvents.recipes(e => {
         ingredients: [{ item: "minecraft:wheat" }],
         result: [{ item: "ratatouille:wheat_kernels", count: 2 }, { item: "farmersdelight:straw", count: 1 }],
         tool: { type: "farmersdelight:tool_action", action: "blade_cut" }
-    }).id("createdelightcelium:cutting/wheat")
+    }).id("createdelight:cutting/wheat")
     threshing(e, "vintagedelight:oat", [
         "2x vintagedelight:raw_oats",
         "farmersdelight:straw",
@@ -66,7 +66,7 @@ ServerEvents.recipes(e => {
         ingredients: [{ item: "vintagedelight:oat" }],
         result: [{ item: "vintagedelight:raw_oats", count: 2 }, { item: "farmersdelight:straw", count: 1 }],
         tool: { type: "farmersdelight:tool_action", action: "blade_cut" }
-    }).id("createdelightcelium:cutting/oat")
+    }).id("createdelight:cutting/oat")
     threshing(e, "farmersdelight:rice_panicle", [
         "3x farmersdelight:rice",
         "farmersdelight:straw",

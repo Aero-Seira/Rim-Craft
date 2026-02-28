@@ -7,4 +7,7 @@ cocoaManinDamageEffect = true
 toasterDoubleSpeed = 3.0
 #After disabling this option, there will be no April Fool's Day effect.
 aprilFoolsDayEffect = true
+#Enjoy effect increases the damage dealt by Eternal Baguette
+#Range: 0.0 ~ 1.7976931348623157E308
+eternalBaguetteDamageUp = 2.0
 
