@@ -24,6 +24,9 @@
 		# Range: 0 ~ 255
 		quest_hover_glow_alpha: 100
 		
+		# Default: false
+		shader_background: false
+		
 		# Default: true
 		smooth_animations: true
 	}

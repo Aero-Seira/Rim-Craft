@@ -4,6 +4,7 @@
 	default_quest_shape: ""
 	filename: "Feast_Afoot"
 	group: "7D0A1432AAAD0EBA"
+	hide_quest_until_deps_complete: true
 	icon: "vintagedelight:white_chefs_hat"
 	id: "1E7A476EE0C13AD1"
 	images: [{
@@ -14,8 +15,15 @@
 		x: -0.5d
 		y: 3.5d
 	}]
-	order_index: 1
-	quest_links: [ ]
+	order_index: 0
+	quest_links: [{
+		id: "329928ACABC57A87"
+		linked_quest: "62C31EFDB74E7053"
+		shape: "hexagon"
+		size: 2.0d
+		x: 7.0d
+		y: 5.0d
+	}]
 	quests: [
 		{
 			id: "67A7A1B0700FFCA3"
@@ -34,6 +42,7 @@
 			dependencies: ["67A7A1B0700FFCA3"]
 			id: "2AD38E54F361CFD2"
 			shape: "rsquare"
+			subtitle: "至此踏入本包种田之旅"
 			tasks: [{
 				id: "723AEC0D38887C6D"
 				item: {
@@ -43,7 +52,7 @@
 						value: "minecraft:hoes"
 					}
 				}
-				title: "任意稿"
+				title: "任意锄"
 				type: "item"
 			}]
 			title: "终极奉献"
@@ -75,7 +84,7 @@
 			id: "2F8F1767773E879D"
 			rewards: [{
 				id: "6006C0A8EA3B014D"
-				item: "rimcraftcore:copper_coin"
+				item: "createdelightcore:copper_coin"
 				type: "item"
 			}]
 			subtitle: "可以扫除&9冬天&r覆盖在&e方块表面的雪"
@@ -98,7 +107,7 @@
 			id: "355BB4013F0EFD14"
 			rewards: [{
 				id: "4EC309549174DE9D"
-				item: "rimcraftcore:copper_coin"
+				item: "createdelightcore:copper_coin"
 				type: "item"
 			}]
 			subtitle: "&e右键作物&r即可查看&a生长环境&r及&4生长状况"
@@ -146,18 +155,11 @@
 			]
 			icon: "eclipticseasons:seasonal_prayer_scroll"
 			id: "0F16A415E991AC8E"
-			rewards: [
-				{
-					id: "478BF1F41AF92E9D"
-					item: "eclipticseasons:seasonal_prayer_scroll"
-					type: "item"
-				}
-				{
-					id: "2453A5042E83594E"
-					item: "eclipticseasons:calendar"
-					type: "item"
-				}
-			]
+			rewards: [{
+				id: "478BF1F41AF92E9D"
+				item: "eclipticseasons:seasonal_prayer_scroll"
+				type: "item"
+			}]
 			shape: "rsquare"
 			size: 1.0d
 			subtitle: "&a春雨惊春清谷天&r，&e夏满芒夏暑相连&r；&6秋处露秋寒霜降&r，&9冬雪雪冬小大寒&r。"
@@ -169,7 +171,7 @@
 				type: "stat"
 				value: 1
 			}]
-			title: "季节系统"
+			title: "季节系统与地区"
 			x: -2.5d
 			y: -2.5d
 		}
@@ -177,9 +179,9 @@
 			dependencies: ["2AA39C8B473231E0"]
 			description: [
 				"&e品质系统&r是本整合包对于&e食物等阶的划分系统&r，品质越高，食物提供的&e饱食度&r和&e效果强度&r&4越高&r、&e效果持续时间&r也会&4延长&r"
-				"&a&n&l如何制作品质食物&r：需要&e对应品质&r的食物原料进行制作，&4仅可手工制作&r，所有&4非手动操作的量产化配方均不可产生品质&r"
-				"&a&n&l如何生产品质食物原料&r：只有&4沃土（以及各种变种）&r种植作物可有&e概率产出高一级品质种子&r，种植后可产出对应品质作物。需要注意的是：作物生长速度越快，产出高品质的作物概率越高。作物的生长速度使用生长检测器查看。"
-				"&a&n&l关于品质的作物&r：每一个级别都能够一定程度的无视季节与湿度的影响。如果要量化的话，铁的效果是1，金的效果是2，钻石的效果是4。"
+				"&a&n&l如何制作品质食物&r：需要&e对应品质&r的食物原料进行制作。所用的平均品质越高，产出的食物品质也会越高。"
+				"&a&n&l如何生产品质食物原料&r：只有&4沃土（以及各种变种）&r种植作物可有&e概率产出高一级品质种子&r，种植后可产出对应品质作物。作物生长速度越快，使用的沃土越高级，产出高品质的作物概率越高。作物的生长速度使用生长检测器查看。需要注意的是：&4仅可手工&r收割，所有&4非手动操作的收割均不可产生品质。"
+				"&r&a&n&l关于品质的作物&r：每一个级别都能够一定程度的无视季节与湿度的影响。如果要量化的话，铁的效果是1，金的效果是2，钻石的效果是4。"
 			]
 			id: "6BC7D3231848B305"
 			rewards: [{
@@ -220,7 +222,7 @@
 			id: "25007076169CFA2B"
 			rewards: [{
 				id: "436C21A3C6DAD061"
-				item: "rimcraftcore:copper_coin"
+				item: "createdelightcore:copper_coin"
 				type: "item"
 			}]
 			subtitle: "放置在墙上以时刻查看所处&e节气&r及&4季节"
@@ -237,7 +239,7 @@
 			id: "3C2FF6382B5811F7"
 			rewards: [{
 				id: "654CE6FF78412D67"
-				item: "rimcraftcore:copper_coin"
+				item: "createdelightcore:copper_coin"
 				type: "item"
 			}]
 			subtitle: "右键&e悬挂告示牌&r以生成&e季节任务告示&r，通过提交季节&e对应作物&r（&4需全部放在物品栏中&r）&r来&e获得心髓&r（季节交替时可能出现任务不会刷新）"
@@ -254,7 +256,7 @@
 			id: "410E15EA8DDEB4FE"
 			rewards: [{
 				id: "501CE3E7F937491C"
-				item: "rimcraftcore:copper_coin"
+				item: "createdelightcore:copper_coin"
 				type: "item"
 			}]
 			subtitle: "右键&4空气&r或者&e蹲下右键&r可以将其放置在墙上，且会根据&4湿度的不同&r产生&e不同的红石信号强度"
@@ -271,7 +273,7 @@
 			id: "4DF2E3798B1260C8"
 			rewards: [{
 				id: "49E2D8D64A2415D6"
-				item: "rimcraftcore:copper_coin"
+				item: "createdelightcore:copper_coin"
 				type: "item"
 			}]
 			shape: "square"
@@ -279,12 +281,12 @@
 			tasks: [
 				{
 					id: "28DF13DE7B5E6C83"
-					item: "rimcraft:sprinkler"
+					item: "createdelight:sprinkler"
 					type: "item"
 				}
 				{
 					id: "77143C7B0618D87C"
-					item: "rimcraft:dryer"
+					item: "createdelight:dryer"
 					type: "item"
 				}
 			]
@@ -298,7 +300,7 @@
 			subtitle: "可售卖存在于&e系统商店&r内的&e食物&r及各种&e食物原料&r，&4品级越高获得钱币越多&r，每个游戏日的&e07:00&r出售一次"
 			tasks: [{
 				id: "36269FC47242F9AF"
-				item: "rimcraft:sell_bin"
+				item: "createdelight:sell_bin"
 				type: "item"
 			}]
 			x: -1.0d
@@ -319,7 +321,7 @@
 			id: "1453031D685ED650"
 			rewards: [{
 				id: "04084AB4D1BAE6D3"
-				item: "rimcraftcore:copper_coin"
+				item: "createdelightcore:copper_coin"
 				type: "item"
 			}]
 			shape: "rsquare"
@@ -343,6 +345,7 @@
 				"5C38150F9B133FBF"
 				"758A7944757826A8"
 			]
+			dependency_requirement: "one_completed"
 			description: [
 				"要获取最初的几个温室之心的话，可以看看节气的进度系统。"
 				"当温室之心所在地区&e处于对应的实际季节&r时，它会发出红石信号。为什么叫实际季节？前文中对于地区的介绍有相关内容。"
@@ -350,7 +353,7 @@
 			id: "020BFCFD744B65AE"
 			rewards: [{
 				id: "4FA8CEF7AB9C39D4"
-				item: "rimcraftcore:copper_coin"
+				item: "createdelightcore:copper_coin"
 				type: "item"
 			}]
 			shape: "square"
@@ -370,7 +373,7 @@
 			id: "2F5888A5C4047E87"
 			rewards: [{
 				id: "12D80BC648A1B0EF"
-				item: "rimcraftcore:gold_coin"
+				item: "createdelightcore:gold_coin"
 				type: "item"
 			}]
 			subtitle: "通过完成&e祈年令&r中的&a春季任务&r获得"
@@ -387,7 +390,7 @@
 			id: "3B6F81873856912B"
 			rewards: [{
 				id: "609495F3357D6BA0"
-				item: "rimcraftcore:gold_coin"
+				item: "createdelightcore:gold_coin"
 				type: "item"
 			}]
 			subtitle: "通过完成&4祈年令&r中的&e夏季任务&r获得"
@@ -404,7 +407,7 @@
 			id: "2834AC4EEB6F9992"
 			rewards: [{
 				id: "2A7DF4E15AC247E5"
-				item: "rimcraftcore:gold_coin"
+				item: "createdelightcore:gold_coin"
 				type: "item"
 			}]
 			subtitle: "通过完成&4祈年令&r中的&6秋季任务&r获得"
@@ -504,6 +507,7 @@
 			dependencies: ["2AD38E54F361CFD2"]
 			icon: "farmersdelight:rich_soil"
 			id: "1FAE95DDB868B787"
+			subtitle: "使用各种沃土可产出高品质作物"
 			tasks: [{
 				id: "5ECF80D957FB01D6"
 				title: "肥沃的土壤可以收获硕果"
@@ -543,11 +547,12 @@
 			y: -5.5d
 		}
 		{
+			dependencies: ["226DB249DC0C5959"]
 			id: "758A7944757826A8"
-			subtitle: "注意只能在月球上使用哦"
+			subtitle: "注意只有在外太空才能发挥催生效果"
 			tasks: [{
 				id: "0EF5F53EACC874DF"
-				item: "rimcraftcore:luna_soil"
+				item: "createdelightcore:luna_soil"
 				type: "item"
 			}]
 			x: 2.5d
@@ -580,7 +585,7 @@
 			id: "2F7B2AE556D0109D"
 			rewards: [{
 				id: "5DD765DD6D0661FE"
-				item: "rimcraftcore:gold_coin"
+				item: "createdelightcore:gold_coin"
 				type: "item"
 			}]
 			subtitle: "通过完成&4祈年令&r中的&9冬季任务&r获得"
@@ -877,7 +882,7 @@
 				}
 				{
 					id: "6171CC5BF5E10701"
-					item: "rimcraftcore:netherite_coin"
+					item: "createdelightcore:netherite_coin"
 					type: "item"
 				}
 			]
@@ -988,10 +993,11 @@
 			y: 3.5d
 		}
 		{
+			dependencies: ["756A97F28B4129C1"]
 			id: "3B22EE550A58193D"
 			rewards: [{
 				id: "6600397956CD6210"
-				item: "rimcraftcore:copper_coin"
+				item: "createdelightcore:copper_coin"
 				type: "item"
 			}]
 			shape: "circle"
@@ -1003,7 +1009,7 @@
 				type: "item"
 			}]
 			title: "我要成为&e酿酒大师&r吖！"
-			x: -7.0d
+			x: -5.5d
 			y: 2.0d
 		}
 		{
@@ -1015,7 +1021,7 @@
 				item: "brewinandchewin:heating_cask"
 				type: "item"
 			}]
-			x: -8.5d
+			x: -7.0d
 			y: 1.5d
 		}
 		{
@@ -1023,7 +1029,7 @@
 			id: "3FA939A92409F435"
 			rewards: [{
 				id: "2B38A9A1F1A341D4"
-				item: "rimcraftcore:copper_coin"
+				item: "createdelightcore:copper_coin"
 				type: "item"
 			}]
 			subtitle: "&4狠狠压榨！"
@@ -1032,7 +1038,7 @@
 				item: "vinery:apple_press"
 				type: "item"
 			}]
-			x: -8.0d
+			x: -6.5d
 			y: 3.5d
 		}
 		{
@@ -1041,7 +1047,7 @@
 			id: "29FBDE7B850C28C1"
 			rewards: [{
 				id: "06721E9AEB42F5BE"
-				item: "rimcraftcore:copper_coin"
+				item: "createdelightcore:copper_coin"
 				type: "item"
 			}]
 			subtitle: "&4呃啊, 有股子味"
@@ -1058,7 +1064,7 @@
 				type: "item"
 			}]
 			title: "少女脚踩葡萄？"
-			x: -8.5d
+			x: -7.0d
 			y: 2.5d
 		}
 		{
@@ -1066,7 +1072,7 @@
 			id: "38C3A965C68F1190"
 			rewards: [{
 				id: "4435A7C22DDB6CAD"
-				item: "rimcraftcore:copper_coin"
+				item: "createdelightcore:copper_coin"
 				type: "item"
 			}]
 			subtitle: "当然啦，你可以把酒藏到存储磁盘里"
@@ -1088,8 +1094,8 @@
 				}
 			]
 			title: "储藏酒的好东西"
-			x: -6.0d
-			y: 0.0d
+			x: -9.0d
+			y: 0.5d
 		}
 		{
 			dependencies: ["3B22EE550A58193D"]
@@ -1100,7 +1106,7 @@
 				item: "brewinandchewin:ice_crate"
 				type: "item"
 			}]
-			x: -8.0d
+			x: -6.5d
 			y: 0.5d
 		}
 		{
@@ -1108,7 +1114,7 @@
 			id: "6D48EBB02348DAE4"
 			rewards: [{
 				id: "3F247F6AEE0B7CB5"
-				item: "rimcraftcore:copper_coin"
+				item: "createdelightcore:copper_coin"
 				type: "item"
 			}]
 			subtitle: "&4生活需要仪式感！！！"
@@ -1118,8 +1124,8 @@
 				type: "item"
 			}]
 			title: "珍藏你的名酒！"
-			x: -6.5d
-			y: 1.0d
+			x: -10.0d
+			y: 1.5d
 		}
 		{
 			dependencies: ["7B285A5A3B2FD565"]
@@ -1128,7 +1134,7 @@
 			id: "25CB0722D908B25A"
 			rewards: [{
 				id: "1F175CF13EF47DC7"
-				item: "rimcraftcore:copper_coin"
+				item: "createdelightcore:copper_coin"
 				type: "item"
 			}]
 			subtitle: "至少看起来挺像那么回事的"
@@ -1184,8 +1190,8 @@
 				}
 			]
 			title: "酿酒师"
-			x: -5.0d
-			y: 0.0d
+			x: -10.0d
+			y: 2.5d
 		}
 		{
 			dependencies: ["7B285A5A3B2FD565"]
@@ -1196,14 +1202,11 @@
 				item: "brewinandchewin:coaster"
 				type: "item"
 			}]
-			x: -4.5d
-			y: 1.0d
+			x: -9.0d
+			y: 3.5d
 		}
 		{
-			dependencies: [
-				"756A97F28B4129C1"
-				"3B22EE550A58193D"
-			]
+			dependencies: ["3B22EE550A58193D"]
 			id: "7B285A5A3B2FD565"
 			shape: "rsquare"
 			tasks: [
@@ -1218,7 +1221,7 @@
 					type: "item"
 				}
 			]
-			x: -5.5d
+			x: -8.5d
 			y: 2.0d
 		}
 		{
@@ -1261,8 +1264,8 @@
 				item: "createcafe:iced_coffee_cup"
 				type: "item"
 			}]
-			x: -6.5d
-			y: 4.0d
+			x: -4.5d
+			y: 6.0d
 		}
 		{
 			dependencies: ["6DCD56C34775CF84"]
@@ -1283,8 +1286,8 @@
 				item: "minecraft:glass_bottle"
 				type: "item"
 			}]
-			x: -7.0d
-			y: 5.0d
+			x: -5.5d
+			y: 6.5d
 		}
 		{
 			dependencies: ["67A7A1B0700FFCA3"]
@@ -1573,10 +1576,8 @@
 			y: 7.5d
 		}
 		{
-			dependencies: [
-				"22C967F22899C478"
-				"1A486FCA2637D099"
-			]
+			dependencies: ["22C967F22899C478"]
+			description: ["需要使用催熟素或者催情素。前者用于作物，后者用于动物。"]
 			id: "618BFEEC3A253778"
 			rewards: [{
 				id: "2FAF87F7538C18CA"
@@ -1609,16 +1610,6 @@
 			}]
 			title: "脱模！！！"
 			x: -0.5d
-			y: 8.5d
-		}
-		{
-			id: "1A486FCA2637D099"
-			tasks: [{
-				id: "4D294E91011D7A12"
-				item: "ratatouille:ripen_matter"
-				type: "item"
-			}]
-			x: 2.0d
 			y: 8.5d
 		}
 		{
@@ -1914,18 +1905,30 @@
 			tasks: [
 				{
 					id: "4F9904ABB52639B5"
-					item: "rimcraft:quality_absorber"
+					item: "createdelight:quality_absorber"
 					type: "item"
 				}
 				{
 					id: "48244CF929F728C9"
-					item: "rimcraft:mechanic_grinding_wheel"
+					item: "createdelight:mechanic_grinding_wheel"
 					type: "item"
 				}
 			]
 			title: "移除物品的品质"
 			x: 0.0d
 			y: -2.5d
+		}
+		{
+			dependencies: ["4FC5D1EC503E6579"]
+			id: "226DB249DC0C5959"
+			subtitle: "需要在外太空发酵"
+			tasks: [{
+				id: "38D13604FF700A4A"
+				item: "createdelightcore:phantom_compost"
+				type: "item"
+			}]
+			x: 2.5d
+			y: -4.0d
 		}
 	]
 	title: "&5盛宴准备时！"

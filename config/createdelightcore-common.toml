@@ -13,7 +13,4 @@ useMoneyTeleport = true
 #It's the base value of the chain.
 #Range: > 1
 teleportCost = 45
-#The chance for luna soil to boost crops grows.
-#Range: 0.0 ~ 1.0
-lunaSoilBoostChance = 0.5
 

@@ -6,20 +6,20 @@ ServerEvents.recipes(e => {
     ])
     e.replaceInput({id: "create_new_age:shaped/basic_motor_extension"}, "create_new_age:copper_circuit", "ae2:logic_processor")
     e.replaceInput({id: "create_new_age:shaped/basic_motor_extension"}, "create_new_age:overcharged_iron", "createmetallurgy:steel_ingot")
-    e.replaceInput({id: "create_new_age:advanced_motor_extension"}, "create_new_age:overcharged_iron_sheet", "vvaddon:mine_ingot")
-    e.replaceInput({id: "create_new_age:advanced_motor_extension"}, "create_new_age:copper_circuit", "ae2omnicells:multidimensional_expansion_processor")
+    e.replaceInput({id: "create_new_age:mechanical_crafting/advanced_motor_extension"}, "create_new_age:overcharged_iron_sheet", "vvaddon:mine_ingot")
+    e.replaceInput({id: "create_new_age:mechanical_crafting/advanced_motor_extension"}, "create_new_age:copper_circuit", "ae2omnicells:multidimensional_expansion_processor")
     //基础电机
     let iner = "createdelight:incomplete_basic_motor"
     e.recipes.create.sequenced_assembly("2x create_new_age:basic_motor", "createaddition:electric_motor",
         [
             e.recipes.create.deploying(iner, [iner, "createaddition:copper_spool"]),
             e.recipes.create.deploying(iner, [iner, "create_sa:heat_engine"]),
-            e.recipes.create.filling(iner, [iner, Fluid.of("createmetallurgy:molten_steel", 360)]),
+            e.recipes.create.filling(iner, [iner, Fluid.of("createdelightcore:molten_andesite", 360)]),
         ]
     )
         .loops(1)
         .transitionalItem(iner)
-        .id("create_new_age:sequenced_assembly/basic_motor")
+        .id("createdelight:sequenced_assembly/basic_motor")
     //高级电机
     let iner_1 = "createdelight:incomplete_advanced_motor"
     e.recipes.create.sequenced_assembly("2x create_new_age:advanced_motor", "create_new_age:basic_motor",
@@ -31,7 +31,7 @@ ServerEvents.recipes(e => {
     )
         .loops(1)
         .transitionalItem(iner_1)
-        .id("create_new_age:sequenced_assembly/advanced_motor")
+        .id("createdelight:sequenced_assembly/advanced_motor")
     //超级电机
     let iner_2 = "createdelight:incomplete_reinforced_motor"
     e.recipes.create.sequenced_assembly("2x create_new_age:reinforced_motor", "create_new_age:advanced_motor",
@@ -43,7 +43,7 @@ ServerEvents.recipes(e => {
     )
         .loops(1)
         .transitionalItem(iner_2)
-        .id("create_new_age:sequenced_assembly/reinforced_motor")
+        .id("createdelight:sequenced_assembly/reinforced_motor")
 
     // //行星齿轮
     // let iner_3 = "createdelight:incomplete_planet_gear"
@@ -64,13 +64,13 @@ ServerEvents.recipes(e => {
     //     "BCDEA",
     //     "AAAAA"
     // ], {
-    //     A: "ad_astra:steel_plate",
+    //     A: "createdelight:steel_sheet",
     //     B: "create:shaft",
     //     C: "create:precision_mechanism",
     //     D: "createdelight:planet_gear",
     //     E: "ae2:logic_processor"
     // })
-    // .id("create_new_age:shaped/basic_motor_extension")
+    // .id("createdelight:shaped/basic_motor_extension")
     // //超级电机超频器
     // let iner_4 = "create_new_age:basic_motor_extension"
     // e.recipes.create.sequenced_assembly("create_new_age:advanced_motor_extension", "create_new_age:basic_motor_extension",
@@ -84,5 +84,5 @@ ServerEvents.recipes(e => {
     // )
     //    .loops(1)
     //    .transitionalItem(iner_4)
-    //    .id("create_new_age:advanced_motor_extension")
+    //    .id("createdelight:advanced_motor_extension")
 })

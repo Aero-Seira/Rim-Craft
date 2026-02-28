@@ -10,7 +10,8 @@ ServerEvents.recipes(e => {
         "vintageimprovements:craft/sulfur_items_to_block",
         "vintageimprovements:craft/sulfur_nuggets_to_item",
         "vintageimprovements:pressurizing/compat/sulfur_dioxide_from_dust",
-        "vintageimprovements:pressurizing/sulfuric_acid"
+        "vintageimprovements:pressurizing/sulfuric_acid",
+        "alexscaves:spelunkie"
     ])
   // 辐鳃鱼（和桶）量产
   vintageimprovements
@@ -35,7 +36,7 @@ ServerEvents.recipes(e => {
             Item.of('createdelight:uranium_dust').withChance(0.25)
         ],
         'alexscaves:uranium'
-    ).id("alexscaves:crushing/uranium_dust")
+    ).id("createdelight:crushing/uranium_dust")
     //石油蒸馏
     e.recipes.createdieselgenerators.distillation(
         [
@@ -45,23 +46,21 @@ ServerEvents.recipes(e => {
         Fluid.of("createdieselgenerators:crude_oil", 100), 100
     )
         .heatRequirement("heated")
-        .id("createdieselgenerators:distillation/crude_oil")
+        .id("createdelight:distillation/crude_oil")
     //石油裂解
     e.recipes.vintageimprovements.pressurizing(
         [
             Fluid.of("createdelight:light_crude_oil", 50),
-            Fluid.of("createdelight:ethylene_fluid", 20),
             'createmetallurgy:coke'
         ],
-        Fluid.of("createdieselgenerators:crude_oil", 100), 60, 1
-    )
+        Fluid.of("createdieselgenerators:crude_oil", 100), 60)
         .superheated()
         .id("createdelight:pyrolysis/crude_oil")
     //石油催化裂解
     e.recipes.vintageimprovements.pressurizing(
         [
             Fluid.of("createdelight:light_crude_oil", 100),
-            Fluid.of("createdelight:ethylene_fluid", 50)
+            Fluid.of("northstar:carbon", 250)
         ],
         [
             Fluid.of("createdieselgenerators:crude_oil", 100),
@@ -76,7 +75,8 @@ ServerEvents.recipes(e => {
             Fluid.of("createdelight:lubricating_oil", 20),
             Fluid.of("createdieselgenerators:diesel", 50),
             Fluid.of("createdieselgenerators:gasoline", 50),
-            Fluid.of("createdelight:ethylene_fluid", 20)
+            Fluid.of("createdelight:ethylene_fluid", 20),
+            Fluid.of("northstar:methane", 20)
         ],
         Fluid.of("createdelight:light_crude_oil", 100), 20
     )
@@ -121,40 +121,15 @@ ServerEvents.recipes(e => {
         'alexscaves:polymer_plate',
         [
             Fluid.of("createdelight:ethylene_fluid", 100),
-            Fluid.of("vintageimprovements:sulfuric_acid", 100)
+            Fluid.of("northstar:oxygen", 100)
         ]
     )
         .heated()
-        .id("alexscaves:polymer_plate")
-    //石墨粉
-    e.recipes.create.crushing(
-        [
-            'createdelight:carbon_dust',
-            Item.of('createdelight:carbon_dust').withChance(0.25)
-        ],
-        'createmetallurgy:graphite',
-    ).id("createdelight:crushing/carbon_dust")
-    //石墨板合成
-    e.recipes.create.filling(
-        'createdelight:carbon_plate',
-        [
-            'createdelight:carbon_dust',
-            Fluid.of('createdelight:ethylene_fluid', 100)
-        ]
-    ).id("createdelight:filling/carbon_plate")
-    e.recipes.vintageimprovements.pressurizing(
-        "createdelight:carbon_plate",
-        [
-            "createdelight:carbon_dust",
-            Fluid.of('createdelight:ethylene_fluid', 10)
-        ], 200
-    )
-        .heated()
-        .id("createdelight:pressurizing/carbon_plate")
+        .id("createdelight:polymer_plate")
     //核燃料棒合成
     {
         let iner = "create_new_age:incomplete_fuel"
-        e.recipes.create.sequenced_assembly('create_new_age:nuclear_fuel', "ad_astra:steel_plate", [
+        e.recipes.create.sequenced_assembly('create_new_age:nuclear_fuel', "createdelight:steel_sheet", [
             e.recipes.vintageimprovements.curving(iner, iner, 1),
             e.recipes.create.deploying(iner, [iner, 'createdelight:carbon_plate']),
             e.recipes.create.deploying(iner, [iner, '#createdelight:fisson_fuel']),
@@ -163,7 +138,7 @@ ServerEvents.recipes(e => {
         )
             .loops(1)
             .transitionalItem(iner)
-            .id("create_new_age:thorium/nuclear_fuel")
+            .id("createdelight:thorium/nuclear_fuel")
     }
     //硫磺，硫磺晶簇->硫粉
     //硫磺晶体生长
@@ -182,7 +157,7 @@ ServerEvents.recipes(e => {
     .processingTime(100)
     .secondaryFluidOutput(0)
     .heated()
-    .id("vintageimprovements:pressurizing/compat/sulfur_dioxide_from_dust")
+    .id("createdelight:pressurizing/compat/sulfur_dioxide_from_dust")
 
     e.recipes.vintageimprovements.pressurizing(
         Fluid.of("vintageimprovements:sulfuric_acid", 500),
@@ -190,16 +165,7 @@ ServerEvents.recipes(e => {
     )
     .processingTime(100)
     .secondaryFluidInput(0)
-    .id("vintageimprovements:pressurizing/sulfuric_acid")
-
-    e.recipes.vintageimprovements.pressurizing(
-        Fluid.of("vintageimprovements:sulfur_dioxide", 500),
-        ["alexscaves:sulfur_dust", "ad_astra:ostrum_nugget"]
-    )
-    .secondaryFluidOutput(0)
-    .processingTime(40)
-    .heated()
-    .id("vintageimprovements:pressurizing/compat/sulfur_dioxide_from_dust_using_ostrum_nugget")
+    .id("createdelight:pressurizing/sulfuric_acid")
     //烂泥再生
     e.recipes.vintageimprovements.pressurizing(
         "27x alexscaves:toxic_paste",
@@ -210,7 +176,7 @@ ServerEvents.recipes(e => {
         ]
     )
         .heated()
-        .id("alexscaves:pressurizing/toxic_paste")
+        .id("createdelight:pressurizing/toxic_paste")
     //硫芯蛋糕卷
     {
         let iner = "bakeries:cut_cake_base"
@@ -227,12 +193,12 @@ ServerEvents.recipes(e => {
         let iner = "bakeries:cut_cake_base"
         e.recipes.create.sequenced_assembly('alexscaves:spelunkie', iner, [
             e.recipes.create.deploying(iner, [iner, "alexscaves:sulfur_dust"]),
-            e.recipes.create.pressing(iner, iner),
             e.recipes.create.filling(iner, [iner, Fluid.of("cosmopolitan:cream", 250)]),
+            e.recipes.create.pressing(iner, iner)
         ])
             .loops(1)
             .transitionalItem(iner)
-            .id("alexcaves:sequenced_assembly/spelunkie_2")
+            .id("createdelight:sequenced_assembly/spelunkie_2")
     }
     e.recipes.kubejs.shapeless(
         "alexscaves:spelunkie",
@@ -241,7 +207,7 @@ ServerEvents.recipes(e => {
             "#forge:cream",
             "alexscaves:sulfur_dust"
         ]
-    ).id("alexscaves:spelunkie")
+    ).id("createdelight:spelunkie")
     //猛汉午餐肉
     {
         let iner = 'luncheonmeatsdelight:luncheon_meat_can'
@@ -253,17 +219,17 @@ ServerEvents.recipes(e => {
         )
             .loops(1)
             .transitionalItem(iner)
-            .id("alexscaves:slam")
+            .id("createdelight:slam")
     }
     //铀块
     e.recipes.kubejs.shapeless(
         "alexscaves:block_of_uranium",
         '9x createdelight:enriched_uraniumdust'
-    ).id("alexscaves:block_of_uranium")
+    ).id("createdelight:block_of_uranium")
     e.recipes.kubejs.shapeless(
         '9x createdelight:enriched_uraniumdust',
         "alexscaves:block_of_uranium"
-    ).id("alexscaves:uranium_from_block")
+    ).id("createdelight:uranium_from_block")
     //铀棒
     let iner_1 = "alexscaves:block_of_uranium"
     e.recipes.create.sequenced_assembly("3x alexscaves:uranium_rod", iner_1,
@@ -276,7 +242,7 @@ ServerEvents.recipes(e => {
     )
         .transitionalItem(iner_1)
         .loops(1)
-        .id("alexscaves:uranium_rod")
+        .id("createdelight:uranium_rod")
     //裂变核心
     e.recipes.create.mechanical_crafting("alexscaves:fissile_core", 
     [
@@ -287,7 +253,7 @@ ServerEvents.recipes(e => {
         A: 'create:iron_sheet',
         B: 'createdelight:bleak_electron_tube',
         C: 'createdelight:enriched_uraniumdust'
-    }).id("create_oppenheimered:compacting/nuclear_fissile_core")
+    }).id("createdelight_oppenheimered:compacting/nuclear_fissile_core")
     //核弹
     e.recipes.create.mechanical_crafting("alexscaves:nuclear_bomb", [
         "AAAAAAA",
@@ -298,11 +264,11 @@ ServerEvents.recipes(e => {
         "ABBBBBA",
         "AAAAAAA"
     ], {
-        A: "ad_astra:steel_plate",
+        A: "createdelight:steel_sheet",
         B: "minecraft:tnt",
         C: "alexscaves:block_of_uranium",
         D: "alexscaves:fissile_core"
-    }).id("alexscaves:nuclear_bomb")
+    }).id("createdelight:nuclear_bomb")
 
 
     //氡气相关
@@ -315,24 +281,25 @@ ServerEvents.recipes(e => {
     )
         .secondaryFluidOutput(0)
         .heated()
-        .id("alexscaves:pressurizing/sulfuric_acid")
+        .id("createdelight:pressurizing/sulfuric_acid_from_alexscaves")
     e.recipes.vintageimprovements.pressurizing(
         [
             Fluid.of("createdelight:radon", 250),
-            Fluid.of("vintageimprovements:sulfuric_acid", 250)
+            Fluid.of("vintageimprovements:sulfuric_acid", 250),
+            "northstar:raw_glowstone_ore"
         ],
         [
             Fluid.of("alexscaves:acid", 500),
-            "ad_astra:ostrum_nugget"
+            "northstar:enriched_glowstone_ore"
         ]
     )
         .secondaryFluidOutput(0)
         .heated()
-        .id("alexscaves:pressurizing/sulfuric_acid_using_ostrum")
+        .id("createdelight:pressurizing/sulfuric_acid_using_glowstone")
     e.recipes.create.filling("alexscaves:radon_bottle", ["minecraft:glass_bottle", Fluid.of("createdelight:radon").withAmount(250)])
-        .id("alexscaves:filling/radon_bottle")
+        .id("createdelight:filling/radon_bottle")
     e.recipes.create.emptying(["minecraft:glass_bottle", Fluid.of("createdelight:radon").withAmount(250)], "alexscaves:radon_bottle")
-        .id("alexscaves:emptying/radon")
+        .id("createdelight:emptying/radon")
 
     e.recipes.vintageimprovements.pressurizing(
         Item.of("alexscaves:uranium_shard", 1).withChance(0.1),
@@ -340,6 +307,6 @@ ServerEvents.recipes(e => {
         160
     )
     .superheated()
-    .id("alexscaves:pressurizing/uranium_shard")
+    .id("createdelight:pressurizing/uranium_shard")
     
 })

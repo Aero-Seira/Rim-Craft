@@ -14,7 +14,7 @@
 	images: [
 		{
 			height: 8.0d
-			image: "rimcraft:textures/gui/youkai_homecoming.png"
+			image: "createdelight:textures/gui/youkai_homecoming.png"
 			rotation: 0.0d
 			width: 10.0d
 			x: 7.0d
@@ -881,7 +881,7 @@
 			tasks: [{
 				count: 16L
 				id: "4B5A22A23465092C"
-				item: "rimcraft:adzuki_beans_seed"
+				item: "createdelight:adzuki_beans_seed"
 				type: "item"
 			}]
 			title: "种下第一颗红豆"

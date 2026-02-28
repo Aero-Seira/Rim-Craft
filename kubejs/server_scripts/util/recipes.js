@@ -107,8 +107,7 @@ function cutting(event, input, outputs) {
         })
         result.push(Item.of(`${count}x ${id}`).withChance(chance))
     });
-    event.recipes.farmersdelight.cutting(input, "#forge:tools/knives", result).id(`farmersdelight:cutting/${input.split(":")[1]}`)
-    event.custom(recipe).id(`tetracelium:cutting/${input.split(":")[1]}`)
+    event.recipes.farmersdelight.cutting(input, "#forge:tools/knives", result).id(`createdelight:cutting/${input.split(":")[1]}`)
 }
 /**
  * @param { Internal.RecipesEventJS } event 
@@ -150,7 +149,6 @@ function cutting_2(event, input, outputs) {
         result.push(Item.of(`${count}x ${id}`).withChance(chance))
     });
     event.recipes.farmersdelight.cutting(input, "#forge:tools/knives", result).id(`${input.split(":")[0]}:${input.split(":")[1]}_cutting`)
-    event.custom(recipe).id(`tetracelium:cutting/${input.split(":")[1]}_from_${input.split(":")[0]}`)
 }
 /**
  * 

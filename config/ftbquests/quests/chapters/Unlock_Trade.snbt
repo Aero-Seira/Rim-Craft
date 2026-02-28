@@ -5,7 +5,7 @@
 	default_repeatable_quest: true
 	filename: "Unlock_Trade"
 	group: "445171CC29E98940"
-	icon: "rimcraftcore:netherite_coin"
+	icon: "createdelightcore:netherite_coin"
 	id: "00F7CEC38A8C570C"
 	order_index: 2
 	quest_links: [ ]
@@ -106,7 +106,10 @@
 			tasks: [{
 				count: 64L
 				id: "0A4EEBE474158827"
-				item: { Count: 64, id: "rimcraftcore:bronze_ingot" }
+				item: {
+					Count: 64
+					id: "createdelightcore:bronze_ingot"
+				}
 				type: "item"
 			}]
 			x: 2.0d
@@ -266,69 +269,6 @@
 			y: -1.0d
 		}
 		{
-			id: "4FCBBE103FE7E9C7"
-			rewards: [{
-				exclude_from_claim_all: true
-				id: "5914FD88721A85D0"
-				table_id: 8248062892074393121L
-				type: "random"
-			}]
-			subtitle: "解锁戴斯"
-			tasks: [{
-				id: "58A7B13B97BFBF42"
-				item: {
-					Count: 1
-					id: "ad_astra:tier_2_rocket"
-					tag: { }
-				}
-				type: "item"
-			}]
-			x: -8.0d
-			y: 0.5d
-		}
-		{
-			id: "057F6F421273C4DC"
-			rewards: [{
-				exclude_from_claim_all: true
-				id: "58C5D3D9AECFC84C"
-				table_id: 8248062892074393121L
-				type: "random"
-			}]
-			subtitle: "解锁紫金"
-			tasks: [{
-				id: "37070498C25172CE"
-				item: {
-					Count: 1
-					id: "ad_astra:tier_3_rocket"
-					tag: { }
-				}
-				type: "item"
-			}]
-			x: -6.0d
-			y: 0.5d
-		}
-		{
-			id: "630E52E14877F5B7"
-			rewards: [{
-				exclude_from_claim_all: true
-				id: "07CAFAF08CBE2262"
-				table_id: 8248062892074393121L
-				type: "random"
-			}]
-			subtitle: "解锁耐热金属"
-			tasks: [{
-				id: "264849DB692791C6"
-				item: {
-					Count: 1
-					id: "ad_astra:tier_4_rocket"
-					tag: { }
-				}
-				type: "item"
-			}]
-			x: -4.0d
-			y: 0.5d
-		}
-		{
 			id: "63356DE1A41FB7E0"
 			rewards: [{
 				exclude_from_claim_all: true
@@ -340,11 +280,11 @@
 			tasks: [{
 				count: 16L
 				id: "1179F1528EE3C8DA"
-				item: "rimcraft:overworld_metal_ore_cluster"
+				item: "createdelight:overworld_metal_ore_cluster"
 				type: "item"
 			}]
 			x: -8.0d
-			y: 2.0d
+			y: 0.5d
 		}
 		{
 			id: "441F72B76AC3D7AC"
@@ -358,11 +298,11 @@
 			tasks: [{
 				count: 16L
 				id: "03203E12099BD581"
-				item: "rimcraft:overworld_noble_metal_ore_cluster"
+				item: "createdelight:overworld_noble_metal_ore_cluster"
 				type: "item"
 			}]
 			x: -6.0d
-			y: 2.0d
+			y: 0.5d
 		}
 		{
 			id: "36114A8D5283E6E5"
@@ -376,11 +316,11 @@
 			tasks: [{
 				count: 16L
 				id: "2C26C76470E8A96A"
-				item: "rimcraft:nether_ore_cluster"
+				item: "createdelight:nether_ore_cluster"
 				type: "item"
 			}]
 			x: -4.0d
-			y: 2.0d
+			y: 0.5d
 		}
 		{
 			can_repeat: false
@@ -393,8 +333,8 @@
 				title: "请读我"
 				type: "checkmark"
 			}]
-			x: 2.0d
-			y: 1.5d
+			x: -1.0d
+			y: 1.0d
 		}
 		{
 			id: "02FD263E4D2BFD82"

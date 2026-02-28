@@ -105,3 +105,8 @@
 		#Harmonizes shading parameters for all snow-covered surfaces when using shaders.
 		UnifiedSnowyBlockShading = true
 
+	[Compat.DistantHorizons]
+		#Force Distant Horizons to refresh all LODs timely.
+		#WARNING: Enabling this may cause a full LOD rebuild and significant lag spikes.
+		DistantHorizonsWinterLODForceUpdateAll = false
+

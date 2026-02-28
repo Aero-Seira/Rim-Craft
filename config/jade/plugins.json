@@ -51,11 +51,6 @@
     "painting": true,
     "chiseled_bookshelf": true
   },
-  "lightmanscurrency": {
-    "model_variant": true,
-    "model_variant.locked": false,
-    "paygate": true
-  },
   "jadeaddons.create": {
     "filter": true,
     "backtank_capacity": true,
@@ -76,23 +71,6 @@
     "coordinates": false,
     "registry_name": "OFF",
     "mod_name": true
-  },
-  "expatternprovider": {
-    "jade_chamber": true,
-    "jade_wireless": true
-  },
-  "quality_food": {
-    "quality": true
-  },
-  "kaleidoscope_doll": {
-    "doll_block": true,
-    "doll_entity": true
-  },
-  "functionalstorage": {
-    "armory": true
-  },
-  "balm": {
-    "jade": true
   },
   "ae2": {
     "part_icon": true,
@@ -118,25 +96,63 @@
     "snowy_status": true,
     "crop.shift_hint": true
   },
-  "jadeaddons": {
-    "equipment_requirement": ""
+  "extendedae_plus": {
+    "labeled_wireless_component": true,
+    "wt_locked": true,
+    "wt_frequency": true,
+    "wt_network_usable": true,
+    "wt_master_mode": true,
+    "wt_channels": true,
+    "wt_master_location": true,
+    "wt_owner": true
   },
   "yes_steve_model": {
     "model_info": true
+  },
+  "create_mechanical_spawner": {
+    "spawner_data": true
+  },
+  "touhou_little_maid": {
+    "maid": true,
+    "shrine_lamp": true
+  },
+  "waystones": {
+    "waystone": true
+  },
+  "industrial_platform": {
+    "common": true
+  },
+  "lightmanscurrency": {
+    "model_variant": true,
+    "model_variant.locked": false,
+    "paygate": true
+  },
+  "expatternprovider": {
+    "jade_chamber": true,
+    "jade_wireless": true
+  },
+  "quality_food": {
+    "quality": true
+  },
+  "kaleidoscope_doll": {
+    "doll_block": true,
+    "doll_entity": true
+  },
+  "functionalstorage": {
+    "armory": true
+  },
+  "balm": {
+    "jade": true
+  },
+  "jadeaddons": {
+    "equipment_requirement": ""
   },
   "bakeries": {
     "baysalt_frame": true,
     "oven": true
   },
-  "create_mechanical_spawner": {
-    "spawner_data": true
-  },
   "jadeaddons.lootr": {
     "info": true
-  },
-  "touhou_little_maid": {
-    "maid": true,
-    "shrine_lamp": true
   },
   "delightful": {
     "crop_progress": true,
@@ -148,8 +164,5 @@
   },
   "createdelightcore.cmr": {
     "snowman_cooler": true
-  },
-  "waystones": {
-    "waystone": true
   }
 }

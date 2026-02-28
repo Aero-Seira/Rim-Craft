@@ -2,7 +2,7 @@
   "parent": "minecraft:block/orientable",
   "textures": {
     "front": "mbd2:block/forged_steel_import_bus",
-    "side": "rimcraftcore:block/forge_steel_casing",
-    "top": "rimcraftcore:block/forge_steel_casing"
+    "side": "createdelightcore:block/forge_steel_casing",
+    "top": "createdelightcore:block/forge_steel_casing"
   }
 }

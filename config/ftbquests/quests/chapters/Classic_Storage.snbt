@@ -22,7 +22,7 @@
 			id: "1268F9D57D75D354"
 			rewards: [{
 				id: "3E56257A939EB869"
-				item: "rimcraftcore:copper_coin"
+				item: "createdelightcore:copper_coin"
 				type: "item"
 			}]
 			tasks: [{
@@ -39,7 +39,7 @@
 			id: "6CB83B142B7FB707"
 			rewards: [{
 				id: "4BAC4AB52A76F032"
-				item: "rimcraftcore:copper_coin"
+				item: "createdelightcore:copper_coin"
 				type: "item"
 			}]
 			tasks: [{
@@ -56,7 +56,7 @@
 			id: "7A13C2C9448883AF"
 			rewards: [{
 				id: "1E61B276B6114C37"
-				item: "rimcraftcore:copper_coin"
+				item: "createdelightcore:copper_coin"
 				type: "item"
 			}]
 			tasks: [{
@@ -73,7 +73,7 @@
 			id: "12CE92727FB9400F"
 			rewards: [{
 				id: "395D8244BF0FA867"
-				item: "rimcraftcore:copper_coin"
+				item: "createdelightcore:copper_coin"
 				type: "item"
 			}]
 			tasks: [{
@@ -90,7 +90,7 @@
 			id: "6862190534199A59"
 			rewards: [{
 				id: "3AA3C0EF5D802422"
-				item: "rimcraftcore:copper_coin"
+				item: "createdelightcore:copper_coin"
 				type: "item"
 			}]
 			tasks: [{
@@ -107,7 +107,7 @@
 			id: "461C6E26340FD370"
 			rewards: [{
 				id: "65D01AF8E79CDD8F"
-				item: "rimcraftcore:copper_coin"
+				item: "createdelightcore:copper_coin"
 				type: "item"
 			}]
 			tasks: [{
@@ -124,7 +124,7 @@
 			id: "4B6F08D3619584DF"
 			rewards: [{
 				id: "08528F83A9A5602D"
-				item: "rimcraftcore:copper_coin"
+				item: "createdelightcore:copper_coin"
 				type: "item"
 			}]
 			tasks: [{
@@ -141,7 +141,7 @@
 			id: "2269248762671B35"
 			rewards: [{
 				id: "08C5644A739477B2"
-				item: "rimcraftcore:copper_coin"
+				item: "createdelightcore:copper_coin"
 				type: "item"
 			}]
 			tasks: [{
@@ -158,7 +158,7 @@
 			id: "29F7F2E0F7F20AF8"
 			rewards: [{
 				id: "5B4A0C789A733CF5"
-				item: "rimcraftcore:copper_coin"
+				item: "createdelightcore:copper_coin"
 				type: "item"
 			}]
 			tasks: [{
@@ -175,7 +175,7 @@
 			id: "6864F65415E69D8C"
 			rewards: [{
 				id: "6B1D02A3A2A5141C"
-				item: "rimcraftcore:copper_coin"
+				item: "createdelightcore:copper_coin"
 				type: "item"
 			}]
 			tasks: [{
@@ -192,7 +192,7 @@
 			id: "17D94ADAABBE71A4"
 			rewards: [{
 				id: "0A629573F1678CC6"
-				item: "rimcraftcore:copper_coin"
+				item: "createdelightcore:copper_coin"
 				type: "item"
 			}]
 			tasks: [{
@@ -209,7 +209,7 @@
 			id: "641A61495195B4B5"
 			rewards: [{
 				id: "0F88615CA51CDAEF"
-				item: "rimcraftcore:copper_coin"
+				item: "createdelightcore:copper_coin"
 				type: "item"
 			}]
 			tasks: [{
@@ -226,7 +226,7 @@
 			id: "69277AE7932158B1"
 			rewards: [{
 				id: "3795665AB0398F40"
-				item: "rimcraftcore:copper_coin"
+				item: "createdelightcore:copper_coin"
 				type: "item"
 			}]
 			tasks: [{
@@ -243,7 +243,7 @@
 			id: "2986E897F743884A"
 			rewards: [{
 				id: "21EA8F15EBFE2047"
-				item: "rimcraftcore:copper_coin"
+				item: "createdelightcore:copper_coin"
 				type: "item"
 			}]
 			tasks: [{
@@ -260,7 +260,7 @@
 			id: "1F30B72A2DA4C838"
 			rewards: [{
 				id: "623FBB2DA4A70C9E"
-				item: "rimcraftcore:copper_coin"
+				item: "createdelightcore:copper_coin"
 				type: "item"
 			}]
 			tasks: [{
@@ -277,7 +277,7 @@
 			id: "0037B829D9FA68E4"
 			rewards: [{
 				id: "298CABD7CBBB8400"
-				item: "rimcraftcore:copper_coin"
+				item: "createdelightcore:copper_coin"
 				type: "item"
 			}]
 			tasks: [{
@@ -294,7 +294,7 @@
 			id: "2995C14095666E1E"
 			rewards: [{
 				id: "2652FE87EC889ECD"
-				item: "rimcraftcore:copper_coin"
+				item: "createdelightcore:copper_coin"
 				type: "item"
 			}]
 			tasks: [{
@@ -311,7 +311,7 @@
 			id: "6AC880AE68D2D45A"
 			rewards: [{
 				id: "26D71AA52F746305"
-				item: "rimcraftcore:copper_coin"
+				item: "createdelightcore:copper_coin"
 				type: "item"
 			}]
 			tasks: [{
@@ -328,7 +328,7 @@
 			id: "12986439CFFDF46A"
 			rewards: [{
 				id: "6BE4CD83436A2719"
-				item: "rimcraftcore:copper_coin"
+				item: "createdelightcore:copper_coin"
 				type: "item"
 			}]
 			tasks: [{
@@ -345,7 +345,7 @@
 			id: "2E50E758A549D655"
 			rewards: [{
 				id: "52CE71FC192EE581"
-				item: "rimcraftcore:copper_coin"
+				item: "createdelightcore:copper_coin"
 				type: "item"
 			}]
 			tasks: [{
@@ -362,7 +362,7 @@
 			id: "6C07D22D95B3ED64"
 			rewards: [{
 				id: "7DBCB2019C83A2B1"
-				item: "rimcraftcore:copper_coin"
+				item: "createdelightcore:copper_coin"
 				type: "item"
 			}]
 			tasks: [{
@@ -379,7 +379,7 @@
 			id: "67A1D17C6AFFB582"
 			rewards: [{
 				id: "4154F15CD42CF3FB"
-				item: "rimcraftcore:copper_coin"
+				item: "createdelightcore:copper_coin"
 				type: "item"
 			}]
 			tasks: [{
@@ -399,7 +399,7 @@
 			id: "15342988E94D8C86"
 			rewards: [{
 				id: "31E072BA55203C0A"
-				item: "rimcraftcore:copper_coin"
+				item: "createdelightcore:copper_coin"
 				type: "item"
 			}]
 			tasks: [{
@@ -420,7 +420,7 @@
 			id: "66D3EF87F856DEA0"
 			rewards: [{
 				id: "7331BA5ED959C0C6"
-				item: "rimcraftcore:copper_coin"
+				item: "createdelightcore:copper_coin"
 				type: "item"
 			}]
 			tasks: [{
@@ -437,7 +437,7 @@
 			id: "1DD9F042EAD99A45"
 			rewards: [{
 				id: "2D8EC2593D06E70E"
-				item: "rimcraftcore:copper_coin"
+				item: "createdelightcore:copper_coin"
 				type: "item"
 			}]
 			tasks: [{
@@ -454,7 +454,7 @@
 			id: "13A62CE93299B5FB"
 			rewards: [{
 				id: "2E34A9BB00DD9AAD"
-				item: "rimcraftcore:copper_coin"
+				item: "createdelightcore:copper_coin"
 				type: "item"
 			}]
 			tasks: [{
@@ -471,7 +471,7 @@
 			id: "4D0A44C255CB9C5F"
 			rewards: [{
 				id: "0DE0D9A0315D59DD"
-				item: "rimcraftcore:copper_coin"
+				item: "createdelightcore:copper_coin"
 				type: "item"
 			}]
 			tasks: [{
@@ -488,7 +488,7 @@
 			id: "34C26DD5E6377E97"
 			rewards: [{
 				id: "67258640844F3A23"
-				item: "rimcraftcore:copper_coin"
+				item: "createdelightcore:copper_coin"
 				type: "item"
 			}]
 			tasks: [{
@@ -505,7 +505,7 @@
 			id: "1262900483306A0C"
 			rewards: [{
 				id: "168E5AA475BF53AF"
-				item: "rimcraftcore:copper_coin"
+				item: "createdelightcore:copper_coin"
 				type: "item"
 			}]
 			tasks: [{
@@ -522,7 +522,7 @@
 			id: "2671A9CCA9CFB94E"
 			rewards: [{
 				id: "58472A660318967A"
-				item: "rimcraftcore:copper_coin"
+				item: "createdelightcore:copper_coin"
 				type: "item"
 			}]
 			tasks: [{
@@ -539,7 +539,7 @@
 			id: "0FEE33EF99BF377F"
 			rewards: [{
 				id: "5CB730082CD7CEB1"
-				item: "rimcraftcore:copper_coin"
+				item: "createdelightcore:copper_coin"
 				type: "item"
 			}]
 			tasks: [{
@@ -556,7 +556,7 @@
 			id: "37E6E726631DA05A"
 			rewards: [{
 				id: "7982045A555C9C84"
-				item: "rimcraftcore:copper_coin"
+				item: "createdelightcore:copper_coin"
 				type: "item"
 			}]
 			tasks: [{
@@ -573,7 +573,7 @@
 			id: "01B9BC213A708345"
 			rewards: [{
 				id: "7ED5B4251C02E064"
-				item: "rimcraftcore:copper_coin"
+				item: "createdelightcore:copper_coin"
 				type: "item"
 			}]
 			tasks: [{
@@ -590,7 +590,7 @@
 			id: "703FC2BEDF4C9BC7"
 			rewards: [{
 				id: "47522F40DA97D7A5"
-				item: "rimcraftcore:copper_coin"
+				item: "createdelightcore:copper_coin"
 				type: "item"
 			}]
 			tasks: [{
@@ -607,7 +607,7 @@
 			id: "5CDCD106FD89BAD6"
 			rewards: [{
 				id: "6B58157E62F21393"
-				item: "rimcraftcore:copper_coin"
+				item: "createdelightcore:copper_coin"
 				type: "item"
 			}]
 			tasks: [{
@@ -624,7 +624,7 @@
 			id: "28C9A5E3525878DE"
 			rewards: [{
 				id: "7C961FE5218BA950"
-				item: "rimcraftcore:copper_coin"
+				item: "createdelightcore:copper_coin"
 				type: "item"
 			}]
 			tasks: [{
@@ -641,7 +641,7 @@
 			id: "6233FB9B5DD57C91"
 			rewards: [{
 				id: "3F73A36B2081DE13"
-				item: "rimcraftcore:copper_coin"
+				item: "createdelightcore:copper_coin"
 				type: "item"
 			}]
 			tasks: [{

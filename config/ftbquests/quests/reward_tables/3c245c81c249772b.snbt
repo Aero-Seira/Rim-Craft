@@ -47,7 +47,7 @@
 				Count: 1
 				id: "gateways:gate_pearl"
 				tag: {
-					gateway: "rimcraft:ghast_trial"
+					gateway: "createdelight:ghast_trial"
 				}
 			}
 			weight: 2.0f
@@ -84,7 +84,7 @@
 				Count: 1
 				id: "gateways:gate_pearl"
 				tag: {
-					gateway: "rimcraft:ice_dragon"
+					gateway: "createdelight:ice_dragon"
 				}
 			}
 			weight: 0.5f
@@ -94,7 +94,7 @@
 				Count: 1
 				id: "gateways:gate_pearl"
 				tag: {
-					gateway: "rimcraft:lightning_dragon"
+					gateway: "createdelight:lightning_dragon"
 				}
 			}
 			weight: 0.5f
@@ -104,7 +104,7 @@
 				Count: 1
 				id: "gateways:gate_pearl"
 				tag: {
-					gateway: "rimcraft:fire_dragon_eyes"
+					gateway: "createdelight:fire_dragon_eyes"
 				}
 			}
 			weight: 0.5f
@@ -124,7 +124,7 @@
 				Count: 1
 				id: "gateways:gate_pearl"
 				tag: {
-					gateway: "rimcraft:sweettide_brokenpoint"
+					gateway: "createdelight:sweettide_brokenpoint"
 				}
 			}
 			weight: 0.1f
@@ -134,7 +134,7 @@
 				Count: 1
 				id: "gateways:gate_pearl"
 				tag: {
-					gateway: "rimcraft:infinite_and_dark_trials"
+					gateway: "createdelight:infinite_and_dark_trials"
 				}
 			}
 			weight: 0.1f
@@ -144,7 +144,7 @@
 				Count: 1
 				id: "gateways:gate_pearl"
 				tag: {
-					gateway: "rimcraft:the_gate_of_eternal_cold"
+					gateway: "createdelight:the_gate_of_eternal_cold"
 				}
 			}
 			weight: 0.1f
@@ -154,7 +154,7 @@
 				Count: 1
 				id: "gateways:gate_pearl"
 				tag: {
-					gateway: "rimcraft:piercing_withering_trial"
+					gateway: "createdelight:piercing_withering_trial"
 				}
 			}
 			weight: 0.1f

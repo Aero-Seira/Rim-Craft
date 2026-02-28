@@ -422,7 +422,7 @@
 			subtitle: "击杀遗弃者掉落，用于提交锻造之艺的千叶寒卷轴任务"
 			tasks: [{
 				id: "0E05F9E6D562C000"
-				item: "rimcraft:devil_eye"
+				item: "createdelight:devil_eye"
 				type: "item"
 			}]
 			x: 10.0d

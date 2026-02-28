@@ -17,7 +17,7 @@
 				Count: 1
 				id: "gateways:gate_pearl"
 				tag: {
-					gateway: "rimcraft:infinite_and_dark_trials"
+					gateway: "createdelight:infinite_and_dark_trials"
 				}
 			}
 		}
@@ -26,7 +26,7 @@
 				Count: 1
 				id: "gateways:gate_pearl"
 				tag: {
-					gateway: "rimcraft:sweettide_brokenpoint"
+					gateway: "createdelight:sweettide_brokenpoint"
 				}
 			}
 		}
@@ -35,7 +35,7 @@
 				Count: 1
 				id: "gateways:gate_pearl"
 				tag: {
-					gateway: "rimcraft:the_gate_of_eternal_cold"
+					gateway: "createdelight:the_gate_of_eternal_cold"
 				}
 			}
 		}
@@ -44,7 +44,7 @@
 				Count: 1
 				id: "gateways:gate_pearl"
 				tag: {
-					gateway: "rimcraft:piercing_withering_trial"
+					gateway: "createdelight:piercing_withering_trial"
 				}
 			}
 		}

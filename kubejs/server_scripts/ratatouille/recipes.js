@@ -28,10 +28,25 @@ ServerEvents.recipes(e => {
   //   'ratatouille:compost_tea',
   //   'ratatouille:compost_residue_fluid',
   // ])
+  e.forEachRecipe({output: "ratatouille:compost_mass"}, recipe => {
+    let ingredients = []
+    let id_split = recipe.getId().split("/")[1]
+    recipe.getOriginalRecipeIngredients().forEach(ing => {
+      let count = 1
+      if (id_split.endsWith("4to1"))
+        count = 4
+      else if (id_split.endsWith("2to1"))
+        count = 2
+      ingredients.push(Ingredient.of(ing, count))
+    })
+    create.mixing(Item.of("createaddition:biomass", recipe.getOriginalRecipeResult().count), ingredients)
+    .id(`createdelight:mixing/${id_split}`)
+  })
   remove_recipes_output(e, [
     "ratatouille:compost_mass"
   ])
   e.replaceInput({}, "ratatouille:compost_mass", "createaddition:biomass")
+  remove_recipes_type(e, ["ratatouille:composting"])
   {
     let iner = "ratatouille:unprocessed_mature_matter_fold"
     create.sequenced_assembly("ratatouille:mature_matter_fold", "ratatouille:compost_residue", [
@@ -40,7 +55,7 @@ ServerEvents.recipes(e => {
     ])
     .loops(1)
     .transitionalItem(iner)
-    .id("ratatouille:sequenced_assembly/mature_matter_fold")
+    .id("createdelight:sequenced_assembly/mature_matter_fold")
   }
   {
     let iner = "ratatouille:unprocessed_ripen_matter_fold"
@@ -50,7 +65,7 @@ ServerEvents.recipes(e => {
     ])
     .loops(1)
     .transitionalItem(iner)
-    .id("ratatouille:sequenced_assembly/ripen_matter_fold")
+    .id("createdelight:sequenced_assembly/ripen_matter_fold")
   }
 
   createdieselgenerators.distillation([
@@ -60,9 +75,9 @@ ServerEvents.recipes(e => {
   ], Fluid.of("ratatouille:compost_fluid", 100))
   .processingTime(100)
   .heatRequirement("heated")
-  .id("ratatouille:distillation/compost_fluid")
+  .id("createdelight:distillation/compost_fluid")
   
   create.compacting(Fluid.of("ratatouille:compost_fluid", 100), "createaddition:biomass")
   .superheated()
-  .id("ratatouille:compacting/compost_fluid")
+  .id("createdelight:compacting/compost_fluid")
 })
