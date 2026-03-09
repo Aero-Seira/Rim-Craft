@@ -1,7 +1,0 @@
-{
-  "parent": "minecraft:item/generated",
-  "textures": {
-    "layer0": "ae2omnicells:item/multidimensional_expansion_circuit_print",
-    "layer1": "ae2omnicells:item/quantum_effect"
-  }
-}
