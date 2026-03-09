@@ -1,8 +1,0 @@
-{
-  "parent": "block/cross",
-  "textures": {
-    "cross": "kinetic_pixel:block/graycotton4",
-    "particle": "kinetic_pixel:block/graycotton0"
-  },
-  "render_type": "cutout"
-}

@@ -1,3 +1,0 @@
-FTBQuestsEvents.completed(e => {
-    
-})
